@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rubrica</string>
+    <string name="add_button">Add</string>
+    <string name="nome">Inserisci nome</string>
+    <string name="cognome">Inserisci cognome</string>
+    <string name="indirizzo">Inserisci indirizzo</string>
+    <string name="telefono">Inserisci telefono</string>
+    <string name="mail">Inserisci la mail</string>
+</resources>

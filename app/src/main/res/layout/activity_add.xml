@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/base_color" android:id="@+id/activity_add">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        android:background="@color/button_color">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUOVO CONTATTO"
+            android:textSize="30dp"
+            android:id="@+id/text_new_contact"
+            android:gravity="center"
+            android:layout_alignParentTop="true" />
+    <EditText
+        android:layout_alignParentRight="true"
+        android:lines="1"
+        android:layout_below="@id/text_new_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome"
+        android:id="@+id/nome_edit_text"/>
+    <EditText
+        android:layout_alignParentRight="true"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cognome"
+        android:layout_below="@id/nome_edit_text"
+        android:id="@+id/cognome_edit_text" />
+    <EditText
+        android:layout_alignParentRight="true"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cognome_edit_text"
+        android:id="@+id/address_edit_text"
+        android:hint="@string/indirizzo"/>
+    <EditText
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefono"
+            android:id="@+id/telefono_edit_text"
+            android:layout_below="@id/address_edit_text"
+            android:layout_alignParentRight="true"
+        />
+        <EditText
+            android:lines="1"
+            android:layout_below="@id/telefono_edit_text"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/mail"
+            android:id="@+id/mail_edit_text"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/account_box"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:id="@+id/floating_action_button">
+
+    </android.support.design.widget.FloatingActionButton>
+
+</RelativeLayout>
